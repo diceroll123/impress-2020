@@ -47,8 +47,8 @@ import getVisibleLayers, {
 } from "../../src/shared/getVisibleLayers";
 
 const VALID_LAYER_URLS = [
-  /^https:\/\/(impress-asset-images\.openneo\.net|impress-asset-images\.s3\.amazonaws\.com)\/(biology|object)\/[0-9]{3}\/[0-9]{3}\/[0-9]{3}\/[0-9]+\/(150|300|600)x(150|300|600)\.png(\?[a-zA-Z0-9_-]+)?$/,
-  /^http:\/\/images\.neopets\.com\/cp\/(bio|object|items)\/data\/[0-9]{3}\/[0-9]{3}\/[0-9]{3}\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_-]+\.(svg|png)(\?.*)?$/,
+  /^https:\/\/(impress-asset-images\.openneo\.net|impress-asset-images\.s3\.amazonaws\.com)\/(biology|object)\/[0-9]{3}\/[0-9]{3}\/[0-9]{3}\/[0-9]+\/(150x150|300x300|600x600)\.png(\?[a-zA-Z0-9_-]+)?$/,
+  /^https?:\/\/images\.neopets\.com\/cp\/(bio|object|items)\/data\/[0-9]{3}\/[0-9]{3}\/[0-9]{3}\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_-]+\.(svg|png)(\?.*)?$/,
   // NOTE: We don't validate the layer's libraryUrl, because assetImage performs validation better than we could!
   /^https:\/\/impress-2020\.openneo\.net\/api\/assetImage\?libraryUrl=[^&]+(&size=(150|300|600))?$/,
 ];
